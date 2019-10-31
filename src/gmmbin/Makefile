@@ -26,7 +26,8 @@ BINFILES = gmm-init-mono gmm-est gmm-acc-stats-ali gmm-align \
            gmm-est-fmllr-raw gmm-est-fmllr-raw-gpost gmm-global-init-from-feats \
            gmm-global-info gmm-latgen-faster-regtree-fmllr gmm-est-fmllr-global \
            gmm-acc-mllt-global gmm-transform-means-global gmm-global-get-post \
-           gmm-global-gselect-to-post gmm-global-est-lvtln-trans gmm-init-biphone
+           gmm-global-gselect-to-post gmm-global-est-lvtln-trans gmm-init-biphone \
+					 gmm-decode-differentiable
 
 OBJFILES =
 
@@ -38,7 +39,7 @@ ADDLIBS = ../decoder/kaldi-decoder.a ../lat/kaldi-lat.a \
           ../fstext/kaldi-fstext.a ../hmm/kaldi-hmm.a ../feat/kaldi-feat.a \
           ../transform/kaldi-transform.a ../gmm/kaldi-gmm.a \
           ../tree/kaldi-tree.a ../util/kaldi-util.a ../matrix/kaldi-matrix.a \
-          ../base/kaldi-base.a 
+          ../base/kaldi-base.a
 
 
 include ../makefiles/default_rules.mk
